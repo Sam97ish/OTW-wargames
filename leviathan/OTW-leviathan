@@ -1,0 +1,29 @@
+overthewire leviathan solutions:
+
+lvl 1 : rioGegei8m
+
+lvl 2 : ougahZi8Ta (strace : traces system calls, very useful to check what a program is doing)
+
+(ltrace: traces libraries calls, very useful as well).
+
+lvl 3: Ahdiemoo1j (ln :used to make a symbolic link to a file)
+the trick is to trick the program into showing the pass
+other option is bash -p which forces the binary to hold the privilages
+
+lvl 4: vuH0coox6m (nothing new)
+
+lvl 5 : Tith4cokei (nothing new, pass was in binary)
+
+lvl 6 : UgaoFee4li (again, using the linking method to force a program to do something to another file)
+
+lvl 7 : ahy7MaeBo9 (used script to brute force 4 digit pin)
+
+#!/bin/bash
+
+for i in {0000..9999};do
+	echo $i
+	~/leviathan6 $i
+done
+
+
+
